@@ -18,8 +18,9 @@ const ICONS = {
 // opening a twelfth band of its own. Three reasons, in order of how load-bearing
 // they are:
 //
-//   - The navbar cannot take a twelfth entry. Its eleven labels were measured
-//     against 1280 and the gap between them TIGHTENED to buy back 40px (read
+//   - The navbar cannot take another entry. Its labels (twelve since the
+//     Future section took the last free slot) were measured against 1280 and
+//     the gap between them TIGHTENED twice to make them fit (read
 //     the comments in Navbar). A band with no nav entry is legal — the hero is
 //     one — but at the BOTTOM of the page it also leaves useActiveSection's
 //     scrolled-to-bottom branch highlighting "Author" for the whole of it.

@@ -8,6 +8,7 @@ import FloatingActions from '@/sections/fab/FloatingActions';
 import Faq from '@/sections/faq/Faq';
 import Features from '@/sections/features/Features';
 import Footer from '@/sections/footer/Footer';
+import Future from '@/sections/future/Future';
 import Gallery from '@/sections/gallery/Gallery';
 import Install from '@/sections/install/Install';
 import Hero from '@/sections/hero/Hero';
@@ -34,7 +35,7 @@ const App = () => {
 
       {/* The home is the only page with in-page section anchors. `SECTION_IDS`
           is module scope because useActiveSection keys its effect on it.
-          collapse="xl": eleven entries only fit on one bar line from 1280 up —
+          collapse="xl": twelve entries only fit on one bar line from 1280 up —
           see the COLLAPSE map in Navbar for the measurement. */}
       <Navbar
         sections={nav.sections}
@@ -43,7 +44,11 @@ const App = () => {
         collapse="xl"
       />
 
-      {/* Tutorial sits right after What's new, high on the page: the release
+      {/* Future is second, straight under the hero: the hero says what Code-XR
+          is, Future says where it is going (the research video), and from About
+          down the page is the extension as it stands today.
+
+          Tutorial sits right after What's new, high on the page: the release
           section is what makes a reader want the thing, and the twelve-minute
           walkthrough is the fastest way to understand it whole. Everything after
           it (Collaboration, Tested projects, Features) then reads as detail on
@@ -60,6 +65,7 @@ const App = () => {
           navbar reads it verbatim and does not derive anything from here. */}
       <main id="main" className="bg-surface text-ink">
         <Hero />
+        <Future />
         <About />
         <WhatsNew />
         <Tutorial />

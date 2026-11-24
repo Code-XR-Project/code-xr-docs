@@ -14,6 +14,10 @@
 // hid all of that from anyone scanning the menu for "what do I need".
 export const nav = {
   sections: [
+    // The research video under the hero. 'Future', not the section's own
+    // eyebrow ("What's next"): the bar already has "What's new" two entries
+    // along, and the two side by side read as one label printed twice.
+    { id: 'future', label: 'Future' },
     // 'Overview', not 'What is Code-XR': adding the FAQ entry put the row 21px
     // over its 822px of space at 1280 and left "Author" orphaned on a second
     // line. This is the longest label by far (114px vs 92 for the next), it is
@@ -21,8 +25,8 @@ export const nav = {
     // other labels already do.
     { id: 'about', label: 'Overview' },
     { id: 'whats-new', label: "What's new" },
-    // 'Tutorial', the shortest honest label for it: with eleven entries the row
-    // has 56px of slack at 1280, and anything longer here spends it.
+    // 'Tutorial', the shortest honest label for it: with twelve entries the row
+    // has ~23px of slack at 1280, and anything longer here spends it.
     { id: 'tutorial', label: 'Tutorial' },
     { id: 'collaboration', label: 'Collaboration' },
     // 'Projects', not 'Tested projects', and this is a measurement not a

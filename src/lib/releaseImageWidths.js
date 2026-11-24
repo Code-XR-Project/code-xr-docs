@@ -4,6 +4,7 @@
 // Every master is listed: the v1-2-0 ones are not published, so a missing
 // entry would send getReleaseImageSources to a URL that 404s.
 export const RELEASE_IMAGE_WIDTHS = {
+  'tfm-prototype/change-prediction.jpg': [640, 1280, 1920],
   'v1-1-0/collaborative-workspace.png': [640, 1280, 1742],
   'v1-1-0/pedestal-mapping-ui.png': [640, 1280, 1742],
   'v1-1-0/scene-v1.0.0.png': [640, 1280, 1920],

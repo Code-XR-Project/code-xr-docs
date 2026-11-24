@@ -20,8 +20,8 @@ const SCROLL_THRESHOLD = 8;
 // render. Callers pass a module-scope array for the same reason.
 const NO_SECTIONS = [];
 
-// Where the inline links take over from the menu, per page. Eleven home
-// entries need ~820px at gap-x-3 and only clear it from 1280 up, so the home
+// Where the inline links take over from the menu, per page. Twelve home
+// entries need ~804px at gap-x-2.5 and only clear it from 1280 up, so the home
 // collapses at xl; the subpages (5-8 short entries) fit from lg. Keeping the
 // bar to one 64px line at every width is what scroll-padding-top (4.5rem),
 // useActiveSection's OFFSET and the subpages' pt-16 are calibrated against —
@@ -35,7 +35,9 @@ const COLLAPSE = {
     panel: 'lg:hidden',
   },
   xl: {
-    links: 'hidden min-w-0 flex-wrap items-center justify-end gap-x-3 gap-y-1 xl:flex',
+    // gap-x-2.5 here and gap-x-3 on lg: only the home has twelve entries. See
+    // the measurement beside the link row below.
+    links: 'hidden min-w-0 flex-wrap items-center justify-end gap-x-2.5 gap-y-1 xl:flex',
     burger: 'xl:hidden',
     panel: 'xl:hidden',
   },
@@ -151,16 +153,19 @@ const Navbar = ({
           {/* Inline links only from the page's collapse threshold (see the
               COLLAPSE map): below it the menu takes over — at 768 the bar
               measured exactly full with two entries, and between 1024 and 1279
-              the home's eleven don't fit on one line either.
+              the home's twelve don't fit on one line either.
 
-              gap-x-3, not gap-x-4. Measured: with eleven entries the row wants
-              860px at 1280 and has 827, so 16px gaps left "Author" alone on a
-              second line. Ten gaps at 12px buy back 40px and it fits again —
-              that 1280 measurement is exactly why the home collapses at xl.
-              Tightening the gap was preferred over shortening a label, because
-              every label here is already the shortest honest name for its
-              section. If a twelfth is ever added, redo this measurement rather
-              than shrinking the number further. */}
+              The home's gap is gap-x-2.5, and it is a measurement. With eleven
+              entries the row wanted 860px at 16px gaps and had 827, so the gap
+              went to 12px. The twelfth ("Future", 43px) was then measured at
+              1280 with a 10px scrollbar: 826px wanted, 826.6 available, under
+              1px of slack, so any wider scrollbar or font rasterizer orphaned
+              "Author". Eleven gaps at 10px buy back 22px. That 1280 measurement
+              is exactly why the home collapses at xl. Tightening the gap was
+              preferred over shortening a label, because every label here is
+              already the shortest honest name for its section. A THIRTEENTH
+              ENTRY DOES NOT FIT: do not shrink the gap again, raise the home's
+              collapse threshold or merge two entries instead. */}
           {hasSections ? (
             <div className={COLLAPSE[collapse].links}>
               {sections.map((section) => (
@@ -250,7 +255,7 @@ const Navbar = ({
         // paints the full scrollable extent — a child scrolling inside a
         // styled parent would draw links "outside the panel"). The 4rem is the
         // one-line top row COLLAPSE guarantees; svh so mobile browser chrome
-        // can't hide the last entries; without this, eleven entries (~640px)
+        // can't hide the last entries; without this, twelve entries (~700px)
         // put "Author" and Install beyond reach on a 375x667 phone or any
         // phone held landscape — a fixed element does not scroll with the page.
         //

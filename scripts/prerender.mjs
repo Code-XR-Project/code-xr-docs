@@ -45,6 +45,7 @@ const run = async () => {
     const { tutorial, TUTORIAL_VIDEO } = await vite.ssrLoadModule(
       '/src/content/tutorialContent.js'
     );
+    const { future, FUTURE_VIDEO } = await vite.ssrLoadModule('/src/content/futureContent.js');
     const { getYouTubeWatchUrl, getYouTubeEmbedBaseUrl, getYouTubeThumbnailUrl } =
       await vite.ssrLoadModule('/src/lib/media.js');
 
@@ -114,6 +115,19 @@ const run = async () => {
       });
 
     const graph = (nodes) => ({ '@context': 'https://schema.org', '@graph': nodes });
+
+    // The research video in the home's "What's next" section. The home is the
+    // only URL that embeds it, so the home is the one that claims it — the same
+    // one-video-one-URL rule that keeps the tutorial's off this page. Its
+    // duration and uploadDate are null in futureContent.js and compact() drops
+    // them; see the note there before filling them in.
+    const futureVideoLd = videoLd({
+      id: FUTURE_VIDEO.id,
+      title: FUTURE_VIDEO.title,
+      description: future.paragraphs[1],
+      duration: FUTURE_VIDEO.duration,
+      uploadDate: FUTURE_VIDEO.uploadDate,
+    });
 
     // FAQPage belongs to the home alone — see the note above it.
     //
@@ -210,6 +224,7 @@ const run = async () => {
         priority: '1.0',
         element: createElement(App),
         injectFaq: true,
+        injectVideo: futureVideoLd,
       },
       // Every subpage replaces the generator's stub. `replaceLd` is asserted
       // below, so a page that ever stopped matching fails the build instead of
@@ -260,6 +275,20 @@ const run = async () => {
 
       if (page.injectFaq) {
         html = html.replace('"@graph": [', `"@graph": [\n          ${JSON.stringify(faqLd)},`);
+      }
+
+      // Same anchor as the FAQ block, and asserted: String.replace leaves the
+      // html untouched when the anchor is missing, which would ship the home
+      // without its VideoObject and say nothing.
+      if (page.injectVideo) {
+        if (!html.includes('"@graph": [')) {
+          throw new Error(`${page.file} has no JSON-LD @graph to add the video to.`);
+        }
+
+        html = html.replace(
+          '"@graph": [',
+          `"@graph": [\n          ${JSON.stringify(page.injectVideo)},`
+        );
       }
 
       // Swaps the generator's whole ld+json block for the full one. Anchored on
