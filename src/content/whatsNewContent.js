@@ -84,7 +84,7 @@ export const whatsNew = {
       id: 'classic',
       title: 'Classic analysis: change the chart without re-running it',
       description:
-        'The analysis CodeXR started with, and still where most sessions begin: one building per file, sized and coloured by the metrics you choose. What 1.2.0 changed is that you no longer have to re-run it to see it another way.',
+        'The analysis Code-XR started with, and still where most sessions begin: one building per file, sized and coloured by the metrics you choose. What 1.2.0 changed is that you no longer have to re-run it to see it another way.',
       points: [
         'Swap the chart type from the Field Mapping panel mid-session, without relaunching the analysis.',
         'The chart types that used to present incorrectly now render properly, and big projects stay readable by showing the top files per metric.',

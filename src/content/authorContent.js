@@ -8,10 +8,10 @@ export const author = {
   eyebrow: 'Author',
   heading: 'Meet the author',
   intro:
-    'The developer behind CodeXR, and the idea that turned a Final Degree Project into a VS Code extension.',
+    'The developer behind Code-XR, and the idea that turned a Final Degree Project into a VS Code extension.',
 
   name: 'Adrián Montes Linares',
-  portraitAlt: 'Portrait of Adrián Montes Linares, the creator of CodeXR',
+  portraitAlt: 'Portrait of Adrián Montes Linares, the creator of Code-XR',
 
   chips: [
     { id: 'education', icon: 'graduation', label: 'Telecommunications Engineering student' },
@@ -20,7 +20,7 @@ export const author = {
   ],
 
   paragraphs: [
-    'Telecommunications Engineering student with great motivation to learn and apply that knowledge in real environments. CodeXR is my Final Degree Project, my first experience with XR technologies, and a demonstration of how ordinary code development can be improved with immersive 3D visualization.',
+    'Telecommunications Engineering student with great motivation to learn and apply that knowledge in real environments. Code-XR is my Final Degree Project, my first experience with XR technologies, and a demonstration of how ordinary code development can be improved with immersive 3D visualization.',
     'I have a problem-solving, analytical profile and a talent for finding creative solutions. I care about quality, I am meticulous with detail, and I am used to delivering finished work, alone and in a team. This project bridges my telecommunications background and current XR technology in an extension that changes how developers look at their own code.',
   ],
 
@@ -42,7 +42,7 @@ export const author = {
       id: 'tfg',
       icon: 'code',
       title: 'Final Degree Project',
-      body: 'CodeXR as the project itself, exploring XR technologies for software visualization.',
+      body: 'Code-XR as the project itself, exploring XR technologies for software visualization.',
     },
     {
       id: 'approach',

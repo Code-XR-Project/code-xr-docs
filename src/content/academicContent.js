@@ -15,7 +15,7 @@ export const academic = {
   eyebrow: 'Research',
   heading: 'Academic resources',
   intro:
-    'The work CodeXR came out of, in full: the artifact recognised at VISSOFT 2025, the thesis it was built for, and the presentation used to defend it.',
+    'The work Code-XR came out of, in full: the artifact recognised at VISSOFT 2025, the thesis it was built for, and the presentation used to defend it.',
 
   // The published paper. The title, the authors and both links come from
   // awardContent, whose own comment says they were put there "for the research
@@ -33,7 +33,7 @@ export const academic = {
 
   note: {
     label: 'Note',
-    body: 'These materials are the academic foundation of CodeXR and go into the research methodology, the technical implementation and the evaluation behind the extension.',
+    body: 'These materials are the academic foundation of Code-XR and go into the research methodology, the technical implementation and the evaluation behind the extension.',
   },
 
   resources: [
@@ -52,7 +52,7 @@ export const academic = {
       icon: 'file',
       title: 'Final Degree Project (TFG)',
       description:
-        'The complete thesis behind CodeXR: the research, the development and the evaluation, with the methodology and the full analysis.',
+        'The complete thesis behind Code-XR: the research, the development and the evaluation, with the methodology and the full analysis.',
       tag: 'Academic thesis',
       action: {
         kind: 'download',

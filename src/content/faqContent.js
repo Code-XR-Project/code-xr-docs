@@ -57,7 +57,7 @@ export const faq = {
       id: 'bug',
       question: 'I found a bug. Where do I report it?',
       answer:
-        'Open an issue on the CodeXR repository. Include your VS Code version, your operating system and the analysis you were running.',
+        'Open an issue on the Code-XR repository. Include your VS Code version, your operating system and the analysis you were running.',
       // Rendered as a link on this answer only. `site.links.issues` had been
       // sitting in siteContent unused since it was written; this is its first
       // consumer.

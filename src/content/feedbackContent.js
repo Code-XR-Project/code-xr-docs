@@ -60,5 +60,5 @@ export const feedback = {
   // "GitHub" button sits about 120px above this one and points at a DIFFERENT
   // repository — the person, not the project. Naming CodeXR is what tells the
   // two apart. Same job as Academic's "Opens in a new tab" meta lines.
-  note: "The review opens the extension's page on the Marketplace; the star goes to the CodeXR repository. Both open in a new tab.",
+  note: "The review opens the extension's page on the Marketplace; the star goes to the Code-XR repository. Both open in a new tab.",
 };

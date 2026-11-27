@@ -21,7 +21,7 @@ export const collaboration = {
   eyebrow: 'Collaboration',
   heading: 'Cross-network Collaboration 2.0',
   intro:
-    'CodeXR can share an XR session with someone who is not on your network, through an outbound Cloudflare tunnel. There are two roles, and they never blur: the host runs the analysis in VS Code and owns the session; the guest joins from a browser, anywhere.',
+    'Code-XR can share an XR session with someone who is not on your network, through an outbound Cloudflare tunnel. There are two roles, and they never blur: the host runs the analysis in VS Code and owns the session; the guest joins from a browser, anywhere.',
 
   principle: {
     title: 'The link is never enough',
@@ -41,7 +41,7 @@ export const collaboration = {
       role: 'host',
       title: 'Start the server, the tunnel follows',
       body: [
-        'Cross-network connections are on by default, so the tunnel opens together with your analysis server. The first time, CodeXR offers to download cloudflared once and remembers your answer. If you stopped the connection, "Start remote access" on the server row brings it back.',
+        'Cross-network connections are on by default, so the tunnel opens together with your analysis server. The first time, Code-XR offers to download cloudflared once and remembers your answer. If you stopped the connection, "Start remote access" on the server row brings it back.',
         'The tunnel is outbound: your router accepts no incoming connections and your IP is never published. The sidebar shows the cross-network address, an https://…trycloudflare.com/join link that also lands on your clipboard, ready to send to your guest through any channel you like. It stays valid for as long as you keep sharing.',
       ],
       images: [
@@ -53,7 +53,7 @@ export const collaboration = {
       role: 'guest',
       title: 'Pick an identity and request access',
       body: [
-        'Opening the link lands on the "Join the XR session" page. The guest continues as anonymous (CodeXR reserves an alias) or chooses a custom name between 2 and 32 characters.',
+        'Opening the link lands on the "Join the XR session" page. The guest continues as anonymous (Code-XR reserves an alias) or chooses a custom name between 2 and 32 characters.',
         'Pressing "Request access" puts them in the waiting room: the page now shows a six-digit field and a Connect button, and without a code nobody gets past it.',
       ],
       images: [
@@ -102,12 +102,12 @@ export const collaboration = {
       role: 'host',
       title: 'Run the room',
       body: [
-        '"Connected users" lists everyone, each row with their avatar colour, client (CodeXR or Browser) and scope (Local or Remote). Clicking a person opens their card: name, role, avatar, connection time, scope and IP address.',
-        'Guests carry a "Remove from Session" action; the host cannot be removed. Removing a remote guest revokes their session: their link stops working, and coming back takes a new invitation and a new code. Removing someone on the local network does not stop them reopening the server address; for that, stop the server. CodeXR shows each IP but does not block IPs: there is no denylist.',
+        '"Connected users" lists everyone, each row with their avatar colour, client (Code-XR or Browser) and scope (Local or Remote). Clicking a person opens their card: name, role, avatar, connection time, scope and IP address.',
+        'Guests carry a "Remove from Session" action; the host cannot be removed. Removing a remote guest revokes their session: their link stops working, and coming back takes a new invitation and a new code. Removing someone on the local network does not stop them reopening the server address; for that, stop the server. Code-XR shows each IP but does not block IPs: there is no denylist.',
         '"Stop remote connection" revokes invitations, sessions and credentials in one go, and the trycloudflare address stops existing.',
       ],
       images: [
-        { file: 'collaboration/host_user/control_host_users.png', w: 266, h: 75, alt: 'Connected users: one local CodeXR participant and one remote browser guest, each with their colour' },
+        { file: 'collaboration/host_user/control_host_users.png', w: 266, h: 75, alt: 'Connected users: one local Code-XR participant and one remote browser guest, each with their colour' },
       ],
     },
   ],
@@ -116,7 +116,7 @@ export const collaboration = {
   notes: [
     'The tunnel is a Cloudflare Quick Tunnel: free, no account, and explicitly best effort. No SLA, no Server-Sent Events, and the address changes every time.',
     'cloudflared is pinned to version 2026.5.2, downloaded only with your explicit consent, and verified by SHA-256 before it ever runs.',
-    'None of this is needed for VR on your own network: a headset on the same wifi opens the scene directly. Cross-network is on by default, and turning it off in Server Configuration stops every tunnel and deletes the cloudflared copy CodeXR downloaded.',
+    'None of this is needed for VR on your own network: a headset on the same wifi opens the scene directly. Cross-network is on by default, and turning it off in Server Configuration stops every tunnel and deletes the cloudflared copy Code-XR downloaded.',
   ],
 
   lightbox: {

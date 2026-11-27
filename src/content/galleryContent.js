@@ -494,7 +494,7 @@ export const gallery = {
       category: 'collaboration',
       file: 'collaboration/host_user/control_host_users.png',
       title: 'Who is in the room',
-      alt: 'Connected users: one local CodeXR participant and one remote browser guest, each with their colour',
+      alt: 'Connected users: one local Code-XR participant and one remote browser guest, each with their colour',
     },
 
     // ------------------------------------------------------------- VR and AR

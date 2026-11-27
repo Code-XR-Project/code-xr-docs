@@ -43,7 +43,7 @@ export const TUTORIAL_LABEL = 'Watch the full tutorial';
 // for every YouTube id; a re-recording changes it there and here.
 export const TUTORIAL_VIDEO = {
   id: 'dtvFhUQ1uKY',
-  title: 'Getting started with CodeXR: the complete tutorial',
+  title: 'Getting started with Code-XR: the complete tutorial',
   durationLabel: '12 minutes',
   // ISO 8601, for the VideoObject the prerender injects. 12:24, from the
   // extension repo's media/v1.2.0/videos/VIDEOS.md.
@@ -57,17 +57,17 @@ export const TUTORIAL_VIDEO = {
   uploadDate: null,
   posterFile: 'hero.png',
   posterAlt:
-    'The CodeXR room: the pedestal table with an analysis on it, two avatars, the guide screen and a shared virtual screen',
+    'The Code-XR room: the pedestal table with an analysis on it, two avatars, the guide screen and a shared virtual screen',
 };
 
 export const tutorial = {
   // ---------------------------------------------------------------- The page
-  seoTitle: 'Getting started with CodeXR | Tutorial',
+  seoTitle: 'Getting started with Code-XR | Tutorial',
   seoDescription:
-    'A complete walkthrough of the CodeXR extension for VS Code: configure the servers, set your analysis defaults, run your first analysis, and find your way around the four analyses inside the XR room.',
+    'A complete walkthrough of the Code-XR extension for VS Code: configure the servers, set your analysis defaults, run your first analysis, and find your way around the four analyses inside the XR room.',
 
   eyebrow: 'Tutorial',
-  heading: 'Getting started with CodeXR',
+  heading: 'Getting started with Code-XR',
   intro:
     'A complete walkthrough of the extension, from the Visual Studio Code sidebar to the four analyses inside the XR room. The video covers exactly these steps in twelve minutes; everything below is the same tour in writing.',
 
@@ -93,9 +93,9 @@ export const tutorial = {
   // -------------------------------------------------------- What CodeXR does
   what: {
     id: 'what-it-does',
-    heading: 'What CodeXR does',
+    heading: 'What Code-XR does',
     paragraphs: [
-      'CodeXR is a Visual Studio Code extension that turns your codebase into something you can walk through. It gives you four ways to look at the same project.',
+      'Code-XR is a Visual Studio Code extension that turns your codebase into something you can walk through. It gives you four ways to look at the same project.',
       'Everything runs on your machine and opens in the browser you already have. A VR headset is optional: with one, the same scene becomes fully immersive.',
     ],
     items: [
@@ -129,7 +129,7 @@ export const tutorial = {
       part: 'setting-up',
       number: 1,
       title: 'Configure your servers',
-      lead: 'The sidebar reads top to bottom, and Servers is where you decide how CodeXR serves its scenes.',
+      lead: 'The sidebar reads top to bottom, and Servers is where you decide how Code-XR serves its scenes.',
       items: [
         {
           term: 'Protocol',
@@ -148,7 +148,7 @@ export const tutorial = {
         {
           term: 'Cross-network connections',
           description:
-            'Enabled by default, so every server you start opens a secure outbound tunnel through Cloudflare. The first time, CodeXR asks permission to download cloudflared, exactly once. Decline and the feature turns itself off; re-enable it here whenever you want and it will ask again.',
+            'Enabled by default, so every server you start opens a secure outbound tunnel through Cloudflare. The first time, Code-XR asks permission to download cloudflared, exactly once. Decline and the feature turns itself off; re-enable it here whenever you want and it will ask again.',
         },
       ],
     },
@@ -159,7 +159,7 @@ export const tutorial = {
       title: 'Manage active servers and your identity',
       lead: 'Active Servers has two parts: Collaboration, where you say who you are, and the list of what is running.',
       paragraphs: [
-        'Collaboration is where you set up how you join others. Paste an invitation link to enter a session someone shared with you, choose your display name (stay anonymous with the alias CodeXR reserves for you, or set your own), pick your avatar colour and enable the 3D avatar models.',
+        'Collaboration is where you set up how you join others. Paste an invitation link to enter a session someone shared with you, choose your display name (stay anonymous with the alias Code-XR reserves for you, or set your own), pick your avatar colour and enable the 3D avatar models.',
       ],
       items: [
         {
@@ -229,7 +229,7 @@ export const tutorial = {
         {
           term: 'Python Environment',
           description:
-            'Whether Python and the analysis dependencies are correctly installed. CodeXR manages its own isolated environment, so normally you never touch this.',
+            'Whether Python and the analysis dependencies are correctly installed. Code-XR manages its own isolated environment, so normally you never touch this.',
         },
         {
           term: 'Visualization Settings',
@@ -246,7 +246,7 @@ export const tutorial = {
       part: 'inside-the-room',
       number: 5,
       title: 'Run your first analysis',
-      lead: 'Right-click a folder and launch a project analysis in deep mode. CodeXR walks the entire codebase, every file and every function, then serves the scene locally and opens it in your browser.',
+      lead: 'Right-click a folder and launch a project analysis in deep mode. Code-XR walks the entire codebase, every file and every function, then serves the scene locally and opens it in your browser.',
     },
     {
       id: 'bearings',
@@ -278,7 +278,7 @@ export const tutorial = {
         {
           file: 'hero.png',
           title: 'The room, in one frame',
-          alt: 'The CodeXR room: the pedestal with the dependency graph, two avatars with name tags, the guide screen, a shared virtual screen and the controller',
+          alt: 'The Code-XR room: the pedestal with the dependency graph, two avatars with name tags, the guide screen, a shared virtual screen and the controller',
         },
       ],
     },
