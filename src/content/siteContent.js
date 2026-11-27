@@ -25,8 +25,8 @@ export const site = {
     // looking for the tab. Asking for the client-rendered variant is what
     // makes the fragment resolve.
     marketplaceReview: `${MARKETPLACE_URL}&ssr=false#review-details`,
-    github: 'https://github.com/aMonteSl/CodeXR',
-    issues: 'https://github.com/aMonteSl/CodeXR/issues',
+    github: 'https://github.com/Code-XR-Project/Code-XR',
+    issues: 'https://github.com/Code-XR-Project/Code-XR/issues',
     docsRepo: 'https://github.com/aMonteSl/code-xr-docs',
     author: 'https://adrianmonteslinares.com/',
     // The author's own accounts, distinct from the project's: `github` above
