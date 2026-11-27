@@ -39,7 +39,7 @@ export const faq = {
       id: 'languages',
       question: 'Does it support my language?',
       answer:
-        'It reads 24 languages plus the HTML DOM, including JavaScript, TypeScript, Python, C and C++, C#, Java, Go, Ruby, PHP, Swift and Kotlin, with cyclomatic complexity measured through Lizard.',
+        "It reads 28 languages plus the HTML DOM, including JavaScript, TypeScript, Python, C and C++, C#, Java, Go, Rust, Ruby, PHP, Swift and Kotlin, with every metric computed by Code-XR's own analysis engine.",
     },
     {
       id: 'privacy',

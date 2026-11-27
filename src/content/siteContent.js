@@ -11,7 +11,7 @@ const MARKETPLACE_URL = 'https://marketplace.visualstudio.com/items?itemName=aMo
 
 export const site = {
   name: 'Code-XR',
-  version: 'v1.2.0',
+  version: 'v1.2.1',
   tagline: 'Code analysis you can walk through',
   description:
     'Code-XR is a VS Code extension that analyzes your code and turns the metrics into a 3D scene: walk your codebase like a city, watch it update live, and replay its Git history.',

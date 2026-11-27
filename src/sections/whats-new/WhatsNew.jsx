@@ -5,13 +5,19 @@ import { ANALYSIS_INDEX_HREF, ANALYSIS_INDEX_LABEL } from '@/content/analysisPag
 import { whatsNew } from '@/content/whatsNewContent';
 import AnalysisBlock from '@/sections/whats-new/AnalysisBlock';
 import HighlightCard from '@/sections/whats-new/HighlightCard';
+import LatestRelease from '@/sections/whats-new/LatestRelease';
 
-// The release section: what the four analyses are, then the rest of 1.2.0.
+// The release section: the newest release on top (LatestRelease, v1.2.1),
+// then v1.2.0, the release that introduced the four analyses, and the rest of
+// it. One section and one nav entry for both: the bar has no room for a
+// thirteenth link (see Navbar).
 const WhatsNew = () => {
   return (
     <section id="whats-new" className="border-t border-edge py-16 sm:py-24">
-      <Container>
-        <div className="@container max-w-3xl">
+      <LatestRelease />
+
+      <Container className="mt-16 sm:mt-20">
+        <div className="@container max-w-3xl border-t border-edge pt-12 sm:pt-16">
           <p className="text-sm font-semibold tracking-wide text-accent-strong uppercase dark:text-accent">
             {whatsNew.eyebrow}
           </p>

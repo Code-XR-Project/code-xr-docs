@@ -26,7 +26,8 @@
 //                    YouTube Studio (YYYY-MM-DD). Same for TUTORIAL_VIDEO in
 //                    tutorialContent.js.
 export const whatsNew = {
-  eyebrow: 'Release',
+  // Second block of #whats-new since 1.2.1: LatestRelease sits above it.
+  eyebrow: 'Previous release',
   heading: "What's new in v1.2.0",
   codename: 'Threads, Timelines & Global Networks',
   intro:
@@ -47,7 +48,7 @@ export const whatsNew = {
   // "about 11 minutes" is quoted from installContent's own quickStart total —
   // change the two together.
   bridge: {
-    text: 'That is all of 1.2.0. One install, then about 11 minutes to your first analysis.',
+    text: 'That is all of 1.2.1 and 1.2.0. One install, then about 11 minutes to your first analysis.',
     label: 'Install it and run it',
     href: '#install',
   },

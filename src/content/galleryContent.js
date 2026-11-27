@@ -46,7 +46,7 @@ export const gallery = {
     id: 'archive',
     label: 'v1.1.0 archive',
     badge: 'v1.1.0',
-    note: 'Material from v1.1.0, kept for reference. The current release is v1.2.0, and everything above shows it.',
+    note: 'Material from v1.1.0, kept for reference. Everything above shows the current releases.',
   },
 
   labels: {

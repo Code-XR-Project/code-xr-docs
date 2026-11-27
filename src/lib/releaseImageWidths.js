@@ -61,4 +61,6 @@ export const RELEASE_IMAGE_WIDTHS = {
   'v1-2-0/xr_experiences/vr-city-at-the-table.jpeg': [640, 1280, 1600],
   'v1-2-0/xr_experiences/vr-flying-over-the-city.jpeg': [640, 1280, 1600],
   'v1-2-0/xr_experiences/vr-testing-cockpit.jpeg': [640, 1280, 1600],
+  'v1-2-1/open-in-editor.png': [640, 1280, 1920],
+  'v1-2-1/reveal-in-xr-scene.png': [640, 1280, 1920],
 };
